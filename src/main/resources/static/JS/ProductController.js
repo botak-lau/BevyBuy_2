@@ -127,7 +127,7 @@ class ProductController {
     formData.append("imageObj2", imageObj2);
     formData.append("imageObj3", imageObj3);
 
-    fetch("http://localhost:8081/item/add", {
+    fetch("mysql://b3e76e09f8ad56:cc552c98@us-cdbr-east-04.cleardb.com/heroku_c97bb7b6368c436?reconnect=true", {
       method: "POST",
       body: formData,
     })
@@ -145,7 +145,7 @@ class ProductController {
     productController._items = [];
     productController._itemsBeforeFiltering = [];
 
-    fetch("http://localhost:8081/item/all")
+    fetch("mysql://b3e76e09f8ad56:cc552c98@us-cdbr-east-04.cleardb.com/heroku_c97bb7b6368c436?reconnect=true")
       .then((response) => response.json())
       .then((data) => {
         console.log("print test fetch items", data);
