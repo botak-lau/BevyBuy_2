@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submitted</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <div th:insert="fragments/navbar.html :: navbar"></div>
+   
+    <div class="mx-auto text-center">
+        <h1> Your application has been submitted.</h1><br>
+        <h2>We will notify you of the status within the next business day.</h2>
+        <br>
+        <h2>Thank You for Spreading the Joy!</h2>
+
+        <a class="btn btn-primary m-2" href="homepage.html" type="button">OK</a>
+    </div>
+
+    <div th:insert="fragments/footer.html :: footer"></div>
+</body>
+
+</html>

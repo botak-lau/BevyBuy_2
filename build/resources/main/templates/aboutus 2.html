@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/aboutUsStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <title>BevyBuy</title>
+</head>
+
+<body>
+
+
+<!-- Start of NavBar -->
+
+<div th:insert="fragments/navbar.html :: navbar"></div>
+
+<!-- End of NavBar -->
+
+
+<div class="jumbotron text-center shadow p-3 mb-5 mt-1 bg-white">
+
+    <h1 class = "display-4 font-weight-bold animate__animated animate__heartBeat "> BevyBuy's Story </h1>
+    <p class = "animate__animated animate__heartBeat  ">Read on to find out more about us!</p>
+</div>
+
+
+<!-- Our Background, Mission, Values -->
+
+<div class="container">
+    <div class="row align-items-center">
+        <div class="col-lg-7 col-12 " >
+
+            <div class="row">
+                <div class="col">
+                    <h2>Our Background</h2>
+                    <p>Founded in 2021, BevyBuy is Singapore’s most trusted group buy company. <br>
+                        BevyBuy is the go to source for great quality products, delivered right to your neighbourhood, at a discounted price. We work with both local and global suppliers, to bring the best deals right to your neighbourhood. </p>
+
+                    <h2>Our Mission</h2>
+                    <p>With our increasingly fast-paced lives today, convenience is increasingly important to consumers, to be able to better maximize time. <br>
+                        Hence, we are committed to connecting people with quality goods and services, at a discounted price, and ensuring seamless delivery of products right to your neighbourhood.</p>
+
+                    <h2>Our Values</h2>
+                    <p>At BevyBuy, we ensure equality and inclusion for everyone. Respect for one another is an everyday business practice. <br>
+                    In addition, with over 2000 suppliers on BevyBuy, we take great care in the work we do, accelerating growth of our people and businesses. </p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Start of Buyer Carousel -->
+
+        <div class="col-lg-5 col-12">
+
+            <div class="container mb-4">
+
+                <div class="row align-items-center">
+
+                    <div class=" col" >
+
+                        <h2 class="text-center">Our Customers</h2>
+                        <p class="text-center">We are always striving to serve YOU better, to provide a consumer experience that is straightforward and fuss-free.</p>
+
+                        <div id="carouselBuyer" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselBuyer" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselBuyer" data-slide-to="1"></li>
+                                <li data-target="#carouselBuyer" data-slide-to="2"></li>
+                                <li data-target="#carouselBuyer" data-slide-to="3"></li>
+
+                            </ol>
+
+
+                            <div class="carousel-inner">
+
+                                <div class="carousel-item active">
+                                    <img src="images/buyerCarousel/ergonomicChair.jpg" class="d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <blockquote>
+                                            <p>If it's the right chair, it doesn't take too long to get comfortable in it.</p>
+                                            <footer>— Robert De Niro</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="images/buyerCarousel/musicLady.jpg" class=" d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <blockquote>
+                                            <p>Music is a world within itself, with a langauge we all understand.</p>
+                                            <footer>— Stevie Wonder</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item">
+                                    <img src="images/buyerCarousel/babyToys.jpg" class="d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <blockquote>
+                                            <p>Play is the work of the child.</p>
+                                            <footer>— Maria Montessori</footer>
+                                        </blockquote>
+                                    </div>
+                                </div>
+
+
+                                <div class="carousel-item">
+                                    <img src="images/buyerCarousel/hikingMan.jpg" class=" d-block w-100">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <blockquote>
+                                            <p>To walk in nature is to witness a thousand miracles.</p>
+                                            <footer>— Mary Davis</footer>
+                                        </blockquote>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+
+                        <a class="carousel-control-prev" href="#carouselBuyer" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+
+                        <a class="carousel-control-next" href="#carouselBuyer" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- End of Buyer Carousel -->
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+</div>
+
+<!-- <div class="container">
+        <h2>Our Background</h2>
+        <p>Founded in 2021, BevyBuy is Singapore’s most trusted group buy company.</p>
+    </div>
+
+    <div class="container">
+        <h2>Our Mission</h2>
+        <p>Bringing convenience to the community and connecting people with goods and services</p>
+    </div>
+
+    <div class="container values">
+        <h2>Our Values</h2>
+        <p>Our company was founded on a people-first philosophy, and respect for everyone has always been an everyday business practice.</p>
+    </div> -->
+
+<hr>
+
+<!-- End of Our Background, Mission, Values -->
+
+
+<!-- Statistics -->
+
+<div class="container statistics mt-5 ">
+    <div class="row align-items-center">
+        <div class="col-md-4 col-sm-6 col-12 col order-sm-2 " >
+            <img src="images/aboutUs/aboutus_products.jpg" class="img-fluid" >
+
+        </div>
+        <div class="col-md-8 col-sm-6 col-12 col order-sm-1 " >
+            <div class="p-3 text-center" >
+                <p>Products offered on BevyBuy</p>
+                <h3>More than 50,000 products to choose from</h3>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container statistics">
+    <div class="row align-items-center">
+        <div class=" col-md-4 col-sm-6 col-12" >
+            <img src="images/aboutUs/aboutus_geoAeas.png" class="img-fluid">
+        </div>
+        <div class="col-md-8 col-sm-6 col-12" >
+            <div class="p-3 text-center" >
+                <p>Geographical Areas Covered </p>
+                <h3>All 28 Districts in Singapore</h3>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container statistics">
+    <div class="row align-items-center">
+        <div class="col-md-4 col-sm-6 col-12 col order-sm-2" >
+            <img src="images/aboutUs/aboutus_suppliers.jpg" class="img-fluid" >
+        </div>
+        <div class="col-md-8 col-sm-6 col-12 col order-sm-1" >
+            <div class="p-3 text-center">
+                <p>Suppliers on BevyBuy </p>
+                <h3>More than 2000 suppliers</h3>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="container statistics mb-5">
+    <div class="row align-items-center">
+        <div class="col-md-4 col-sm-6 col-12" >
+            <img src="images/aboutUs/aboutus_orders.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-8 col-sm-6 col-12" >
+            <div class="p-3 text-center" >
+                <p>BevyBuy Ordered fulfilled </p>
+                <h3>More than 100,000 orders fulfilled</h3>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<hr>
+
+<!-- End of Statistics -->
+
+
+<!-- Meet Our Team -->
+
+
+<div class="container">
+
+    <!-- Row 1 -->
+
+    <div class="row justify-content-center teamTitle mb-3">
+        <h2>Meet Our Team</h2>
+
+    </div>
+
+    <!-- End of Row 1 -->
+
+
+    <!-- Row 2 -->
+
+    <div class="row d-flex justify-content-center mb-3">
+
+        <div class="card col-md-3 border-0" style="width: 18rem; height: 45rem ">
+
+            <img class="card-img-top img-fluid rounded-circle" src="images/aboutUs/anthonyPic.jpeg" alt="Card image cap">
+
+            <div class="card-body d-flex flex-column">
+                <h4>Anthony</h4>
+                <p class="card-text"><i>Junior Full Stack Developer</i></p>
+                <p class="card-text">Learning new technologies and solving difficult problems genuinely excites me. <br> Software development is a rewarding field which constantly challenges me to come up with creative solutions for my clients. <br> <button type="button" class="btn btn-link" data-toggle="modal" data-target="#anthonyModal"> Click to Read More </button></p>
+
+                <div class="d-flex justify-content-center mt-auto">
+                    <a href="https://sg.linkedin.com" target="_blank"><img class="personalIcon" src="images/aboutUs/linkedinIcon.png"></a>
+                    <a href="https://github.com" target="_blank"><img class="personalIcon" src="images/aboutUs/GitHubLogo.png"></a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="card col-md-3 border-0" style="width: 18rem; height: 45rem">
+            <img class="card-img-top img-fluid rounded-circle" src="images/aboutUs/FernandoPic.jpg" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+                <h4>Fernando</h4>
+                <p class="card-text"><i>Junior Full Stack Developer</i></p>
+                <p class="card-text"> Since my childhood days, I have always been inquisitive and curious about electronic devices, spending time to discover how they work. This motivates me to pursue my passion in software development. Technology is the future. <br> <button type="button" class="btn btn-link" data-toggle="modal" data-target="#fernandoModal"> Click to Read More </button></p>
+
+                <div class="d-flex justify-content-center mt-auto">
+
+                    <a href="https://sg.linkedin.com" target="_blank"><img class="personalIcon" src="images/aboutUs/linkedinIcon.png"></a>
+                    <a href="https://github.com" target="_blank"><img class="personalIcon" src="images/aboutUs/GitHubLogo.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-md-3 border-0" style="width: 18rem; height: 45rem">
+            <img class="card-img-top img-fluid rounded-circle" src="images/aboutUs/lydiaPic.jpg" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+                <h4>Lydia</h4>
+                <p class="card-text"><i>Junior Full Stack Developer</i></p>
+                <p class="card-text">I enjoy working with computers since I was little. With my love of constructing ideas and developing creative designs, this has led me to embark on a software developer learning journey to broaden my skill set. <br> <button type="button" class="btn btn-link" data-toggle="modal" data-target="#lydiaModal"> Click to Read More </button></p>
+
+                <div class="d-flex justify-content-center mt-auto">
+                    <a href="https://sg.linkedin.com" target="_blank"><img class="personalIcon" src="images/aboutUs/linkedinIcon.png"></a>
+                    <a href="https://github.com" target="_blank"><img class="personalIcon" src="images/aboutUs/GitHubLogo.png"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-md-3 border-0 mb-3" style="width: 18rem; height: 45rem">
+            <img class="card-img-top img-fluid rounded-circle" src="images/aboutUs/hazrul.jpg" alt="Card image cap">
+            <div class="card-body d-flex flex-column">
+                <h4>Hazrul</h4>
+                <p class="card-text"><i>Junior Full Stack Developer</i></p>
+                <p class="card-text">I first discovered an interest in software and coding during my schooling days. <br> My goal for the future is to build successful applications that improves the lives of people around me. <br> <button type="button" class="btn btn-link" data-toggle="modal" data-target="#hazrulModal"> Click to Read More </button></p>
+
+                <div class="d-flex justify-content-center mt-auto">
+                    <a href="https://sg.linkedin.com" target="_blank"><img class="personalIcon" src="images/aboutUs/linkedinIcon.png"></a>
+                    <a href="https://github.com" target="_blank"><img class="personalIcon" src="images/aboutUs/GitHubLogo.png"></a>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <!-- End of Row 2 -->
+
+</div>
+
+
+<!-- End of Meet Our Team -->
+
+
+
+<!-- Start of Footer -->
+
+<div th:insert="fragments/footer.html :: footer"></div>
+
+
+<!-- End of Footer -->
+
+
+<!-- Start of Modal -->
+
+<div class="modal fade" id="anthonyModal" tabindex="-1" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content ">
+            <div class="modal-header d-block text-center">
+
+                <h5 class="modal-title" id="exampleModalLabel1">Anthony</h5>
+                <img class=" img-fluid rounded-circle" src="images/aboutUs/anthonyPic.jpeg" alt="Card image cap">
+
+            </div>
+            <div class="modal-body text-center">
+                <p>Learning new technologies and solving difficult problems genuinely excites me.  <br> Software development is a rewarding field which constantly challenges me to come up with creative solutions for my clients.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="fernandoModal" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content ">
+            <div class="modal-header d-block text-center">
+
+                <h5 class="modal-title" id="exampleModalLabel2">Fernando</h5>
+                <img class=" img-fluid rounded-circle" src="images/aboutUs/fernandoPic.jpg" alt="Card image cap">
+
+            </div>
+            <div class="modal-body text-center">
+                <p>Since my childhood days, I have always been inquisitive and curious about electronic devices, spending time to discover how they work. This motivates me to pursue my passion in software development. Technology is the future.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="lydiaModal" tabindex="-1" aria-labelledby="exampleModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content ">
+            <div class="modal-header d-block text-center">
+
+                <h5 class="modal-title" id="exampleModalLabel3">Lydia</h5>
+                <img class=" img-fluid rounded-circle" src="images/aboutUs/lydiaPic.jpg" alt="Card image cap">
+
+            </div>
+            <div class="modal-body text-center">
+                <p>I enjoy working with computers since I was little. With my love of constructing ideas and developing creative designs, this has led me to embark on a software developer learning journey to broaden my skill set.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="hazrulModal" tabindex="-1" aria-labelledby="exampleModalLabel4" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content ">
+            <div class="modal-header d-block text-center">
+
+                <h5 class="modal-title" id="exampleModalLabel4">Hazrul</h5>
+                <img class=" img-fluid rounded-circle" src="images/aboutUs/hazrul.jpg" alt="Card image cap">
+
+            </div>
+            <div class="modal-body text-center">
+                <p>I first discovered an interest in software and coding during my schooling days. <br> My goal for the future is to build successful applications that improves the lives of people around me. </p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- End of Modal -->
+
+
+
+
+
+
+
+
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+-->
+
+
+
+
+</body>
+</html>

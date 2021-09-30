@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/form.css">
+
+    <title>Seller Registration</title>
+</head>
+
+<body>
+<div th:insert="fragments/navbar.html :: navbar"></div>
+
+<div class="container p-5 ">
+    <form id="formSeller" enctype="multipart/form-data">
+
+        <div class="form-group">
+            <label for="inputName">Full Name:</label>
+            <input type="text" id="inputName" name="inputName" placeholder="Enter your name" class="form-control"
+                   required> <span id="nameErr"></span>
+            <br>
+
+            <label for="inputCompany">Company:</label>
+            <input type="text" id="inputCompany" name="inputCompany" placeholder="Enter name of your company"
+                   class="form-control" required> <span id="nameErr"></span>
+            <br>
+
+            <label for="inputCompanyDescription">Company Description:</label>
+            <input type="text" id="inputCompanyDescription" name="inputCompanyDescription"
+                   placeholder="Write a short description of your company" class="form-control" required> <span
+                id="nameErr"></span>
+            <br>
+
+
+            <label for="inputAddr">Address:</label>
+            <input type="text" id="inputAddr" name="inputAddr" placeholder="Enter the address of your company"
+                   class="form-control" required> <span id="nameErr"></span>
+            <br>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="inputAddrUnit">Address 2:</label>
+                    <input type="text" id="inputAddrUnit" name="inputAddrUnit" placeholder="Enter the unit numer"
+                           class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputAddrPostal">Postal Code:</label>
+                    <input type="text" id="inputAddrPostal" name="inputAddrPostal" placeholder="Enter postal code"
+                           class="form-control" required> <span id="nameErr"></span>
+                    <br>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputEmail">Email:</label>
+                    <input type="email" id="inputEmail" name="inputEmail" placeholder="Enter your email address"
+                           class="form-control" required> <span id="nameErr"></span>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputMobileNum">Mobile phone:</label>
+                    <input type="phone" id="inputMobileNum" name="inputMobileNum"
+                           placeholder="Enter your mobile phone number" class="form-control" required> <span
+                        id="nameErr"></span>
+                    <br><br />
+                </div>
+            </div>
+
+            <h3>Product Details:</h3>
+            <label for="inputItemDescription">Product Description:</label>
+            <input type="text" id="inputItemDescription" name="inputItemDescription"
+                   placeholder="Enter description of your product" class="form-control" required> <span
+                id="nameErr"></span><br>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <label for="inputItemCategory">Product Category:</label>
+                    <select id="inputItemCategory" name="inputItemCategory" class="form-control">
+                        <option value="select">Select</option>
+                        <option value="Mobile Phones">Mobile Phones</option>
+                        <option value="Tablets">Tablets</option>
+                        <option value="Food">Food</option>
+                    </select>
+                </div>
+                <!--                Fernando changed to have a specific product model  -->
+                <div class="col-md-4">
+                    <label for="productModel">Model of the Product</label>
+                    <input type="text" id="productModel" name="productModel"
+                           placeholder="Enter the Model of the Product" class="form-control">
+                </div>
+                <!--                Fernando changed to have a specific product model -->
+                <div class="col-md-4">
+                    <label for="inputListPrice">List Price:</label>
+                    <input type="number" id="inputListPrice" name="inputListPrice"
+                           placeholder="Enter the price of the product" class="form-control" required> <span
+                        id="nameErr"></span>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputGroupDiscount">Group Discount(%):</label>
+                    <input type="number" id="inputGroupDiscount" name="inputGroupDiscount"
+                           placeholder="Enter the product discount" class="form-control" required> <span
+                        id="nameErr"></span><br />
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputMinQty">Minimum Group Quantity Required:</label>
+                    <input type="number" id="inputMinQty" name="inputMinQty"
+                           placeholder="Enter the group minimum quantity" class="form-control" required> <span
+                        id="nameErr"></span>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputOfferPeriod">Offer Period (Weeks):</label>
+                    <input type="number" id="inputOfferPeriod" name="inputOfferPeriod"
+                           placeholder="Enter number of Weeks" class="form-control" required> <span
+                        id="nameErr"></span>
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputEffectiveDate">Start Date of Offer:</label>
+                    <input type="date" id="inputEffectiveDate" name="inputEffectiveDate" class="form-control"
+                           required> <span id="nameErr"></span><br />
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputCommunityOrgz">Community Organizer Code if any:</label>
+                    <input type="number" id="inputCommunityOrgz" name="inputCommunityOrgz"
+                           placeholder="Enter Community Organizer Code" class="form-control">
+                </div>
+
+<!--                Fernando changed to have a specific product model -->
+<!--                <div class="col-md-4">-->
+<!--                    <label for="inputReferralCode">Referral Code if any:</label>-->
+<!--                    <input type="number" id="inputReferralCode" name="inputReferralCode"-->
+<!--                           placeholder="Enter referral code" class="form-control">-->
+<!--                </div>-->
+                <!--                Fernando changed to have a specific product model ends-->
+                <div class="col-md-4">
+                    <label for="area">Select applicable areas:</label>
+                    <select id="area" name="area" class="form-control"> <br />
+                        <option>Select Area</option>
+                        <option value="D01">Boat Quay / Raffles Place / Marina</option>
+                        <option value="D02">Chinatown / Tanjong Pagar</option>
+                        <option value="D03">Alexandra / Commonwealth</option>
+                        <option value="D04">Harbourfront / Telok Blangah</option>
+                        <option value="D05">Buona Vista / West Coast / Clementi New Town</option>
+                        <option value="D06">City Hall / Clarke Quay</option>
+                        <option value="D07">Beach Road / Bugis / Rochor</option>
+                        <option value="D08">Farrer Park / Serangoon Rd</option>
+                        <option value="D09">Orchard / River Valley</option>
+                        <option value="D10">Tanglin / Holland / Bukit Timah</option>
+                        <option value="D11">Newton / Novena</option>
+                        <option value="D12">Balestier / Toa Payoh</option>
+                        <option value="D13">Macpherson / Potong Pasir</option>
+                        <option value="D14">Eunos / Geylang / Paya Lebar</option>
+                        <option value="D15">East Coast / Marine Parade</option>
+                        <option value="D16">Bedok / Upper East Coast</option>
+                        <option value="D17">Changi Airport / Changi Village</option>
+                        <option value="D18">Pasir Ris / Tampines</option>
+                        <option value="D19">Hougang / Punggol / Sengkang</option>
+                        <option value="D20">Ang Mo Kio / Bishan / Thomson</option>
+                        <option value="D21">Clementi Park / Upper Bukit Timah</option>
+                        <option value="D22">Boon Lay / Jurong / Tuas</option>
+                        <option value="D23">Dairy Farm / Bukit Panjang / Choa Chu Kang</option>
+                        <option value="D24">Lim Chu Kang / Tengah</option>
+                        <option value="D25">Admiralty / Woodlands</option>
+                        <option value="D26">Mandai / Upper Thomson</option>
+                        <option value="D27">Sembawang / Yishun</option>
+                        <option value="D28">Seletar / Yio Chu Kang</option>
+                    </select> <br />
+
+                    <div id="error-wrapper">
+                        <i id="error-icon" class=""></i>
+                        <small id="error"></small>
+                    </div>
+                </div>
+
+                <div class="col-md" id="imagesSeller">Upload images of your product (*.jpg, *.png):
+                    <div class="col-md-3">
+                        <label for="imageSeller1"></label>
+                        <input type="file" id="imageSeller1" name="imageSeller1" accept="image/*" multiple
+                               required class="form-control-file">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="imageSeller2"></label>
+                        <input type="file" id="imageSeller2" name="imageSeller2" accept="image/*" multiple
+                               class="form-control-file">
+                    </div>
+                    <div class="col-md-3">
+                        <label for="imageSeller3"></label>
+                        <input type="file" id="imageSeller3" name="imageSeller3" accept="image/*" multiple
+                               class="form-control-file">
+                        <span id="Err"></span>
+                    </div><br />
+                </div>
+            </div>
+
+            <label for="deliveryServices">Select delivery services offered:</label>
+            <select id="deliveryServices" name="deliveryService" class="form-control" required> <br />
+                <option id="option-select" value="select">Select Delivery Services</option>
+                <option value="Doorstep Delivery">Deliver to individual buyers</option>
+                <option value="Collect from Community Organizer">Deliver to community organizer or central location</option>
+                <option value="Self Pickup">Pick up by the individual buyer or community organizer</option>
+            </select> <br><br />
+            <span id="Err"></span>
+
+
+            <!-- inserted -->
+            <input type="radio" id="radio_agree" name="terms" value="agree" required>
+
+
+            <label>By proceeding, I agree that bevybuy can collect, use and disclose the information provided by me
+                in accordance with the Privacy Policy and I fully comply with the Terms & Conditions which I have
+                read and understand.</label>
+
+            <button class="btn btn-primary m-2" id ="btn" type="submit">Submit</button>
+            <button class="btn btn-outline-secondary m-2" type="reset">Reset</button>
+        </div>
+    </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div th:insert="fragments/footer.html :: footer"></div>
+
+
+
+<!--Scripts-->
+
+<script src="JS/ProductController.js"></script>
+<script src="JS/seller.js"></script>
+
+
+
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
