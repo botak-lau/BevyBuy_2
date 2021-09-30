@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    //fragment for navbar
+    //update the href links
+    <nav th:fragment="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- Just an image -->
+    <!-- <nav class="navbar navbar-light bg-light"> -->
+        <a class="navbar-brand" href="#">
+            <img
+                    src="images/homepage/logo_transparent_background.png"
+                    height="30"
+                    alt=""
+            />
+        </a>
+    <!-- </nav> -->
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" th:href="@{homepage}">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{aboutus}">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" th:href="@{products}">Products</a>
+            </li>
+
+            <li class="nav-item dropdown">
+                <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-toggle="dropdown"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                >
+                    Seller
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" th:href="@{seller_reg}">Seller Registration</a>
+                    <a class="dropdown-item" th:href="@{seller_info}">Seller FAQ</a>
+                    <!-- <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">More</a> -->
+                </div>
+            </li>
+            <!--
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+            </li>
+            -->
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input
+                    class="form-control mr-sm-0"
+                    type="search"
+                    placeholder=""
+                    aria-label="Search"
+            />
+            <button id = "buttonSearch" class="btn my-2 my-sm-0 text-white" type="submit">
+                Search
+            </button>
+        </form>
+    </div>
+</nav>
+
+</body>
+</html>
