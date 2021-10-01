@@ -145,7 +145,7 @@ class ProductController {
     productController._items = [];
     productController._itemsBeforeFiltering = [];
 
-    fetch("https://bevybuy.herokuapp.com/item/all ")
+    fetch("https://bevybuy.herokuapp.com/item/all")
       .then((response) => response.json())
       .then((data) => {
         console.log("print test fetch items", data);
