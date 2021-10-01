@@ -1,5 +1,13 @@
 /* About Us Styles*/
+#buttonSearch {
+  background-color:#b042b4;
+  border: 1px solid #b042b4;
+}
 
+#buttonSearch:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+}
 
 .btn {
     line-height: 1;
