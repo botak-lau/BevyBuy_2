@@ -276,7 +276,7 @@ Small devices (landscape phones, 576px and up) */
     /* overflow: hidden; */
   }
 
-  
+
       #product-footer{
           position:absolute;
           bottom:0;
@@ -315,8 +315,8 @@ Small devices (landscape phones, 576px and up) */
 
   #myBtn {
         border-radius: 50%;
-        bottom: 10vh;
-        right: 30px;
+        bottom: 6vh;
+        right: 10px;
   }
 
 }
