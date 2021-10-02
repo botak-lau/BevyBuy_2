@@ -161,6 +161,7 @@ class ProductController {
           this._itemsBeforeFiltering
         );
 
+
         productController.displayItem();
       })
       .catch((e) => console.log(e));
@@ -239,6 +240,13 @@ class ProductController {
         });
       }
     });
+
+//todo testing footer display in the middle of the window
+            //setting footer display:static if items are available to display
+            if(productController._items.length != 0 ){
+                document.getElementById("product-footer").style.position = "static";
+            }
+
 
     //clearing Session Storage
     productController.clearSessionStorage();

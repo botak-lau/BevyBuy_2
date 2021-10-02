@@ -127,13 +127,13 @@ class ProductController {
     formData.append("imageObj2", imageObj2);
     formData.append("imageObj3", imageObj3);
 
-    fetch("http://localhost:8081/item/add", {
+    fetch("https://bevybuy.herokuapp.com/item/add", {
       method: "POST",
       body: formData,
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log("sucess post", data);
+        console.log("successful post", data);
         //alert("Item successfully added to the list")
       })
       .catch((e) => console.log(e));
@@ -145,7 +145,7 @@ class ProductController {
     productController._items = [];
     productController._itemsBeforeFiltering = [];
 
-    fetch("http://localhost:8081/item/all")
+    fetch("https://bevybuy.herokuapp.com/item/all")
       .then((response) => response.json())
       .then((data) => {
         console.log("print test fetch items", data);
@@ -160,6 +160,7 @@ class ProductController {
           "_itemsBeforeFiltering without filtering",
           this._itemsBeforeFiltering
         );
+
 
         productController.displayItem();
       })
@@ -239,6 +240,13 @@ class ProductController {
         });
       }
     });
+
+//todo testing footer display in the middle of the window
+            //setting footer display:static if items are available to display
+            if(productController._items.length != 0 ){
+                document.getElementById("product-footer").style.position = "static";
+            }
+
 
     //clearing Session Storage
     productController.clearSessionStorage();
