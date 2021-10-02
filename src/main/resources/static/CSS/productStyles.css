@@ -27,14 +27,14 @@ hr{
   margin: 3px;
 }
 
-#product-footer{
-    position:absolute;
-    bottom:0;
-    width:100%;
-}
 
-/* Jumbotron header
-    height:268.8px; //height of footer
+
+/*
+    #product-footer{
+        position:absolute;
+        bottom:0;
+        width:100%;
+    }
 */
 
 #my-jumbotron{
@@ -239,10 +239,6 @@ Small devices (landscape phones, 576px and up) */
   .modal {
     margin: 0 auto;
   }
-
-  #product-footer{
-      position:static;
-  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -261,10 +257,6 @@ Small devices (landscape phones, 576px and up) */
     object-fit: cover;
     /* overflow: hidden; */
   }
-
-    #product-footer{
-        position:static;
-    }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -283,6 +275,13 @@ Small devices (landscape phones, 576px and up) */
     object-fit: cover;
     /* overflow: hidden; */
   }
+
+  
+      #product-footer{
+          position:absolute;
+          bottom:0;
+          width:100%;
+      }
 
 }
 
