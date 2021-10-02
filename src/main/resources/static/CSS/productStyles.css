@@ -242,8 +242,6 @@ Small devices (landscape phones, 576px and up) */
 
   #product-footer{
       position:static;
-      bottom:0;
-      width:100%;
   }
 }
 
@@ -266,8 +264,6 @@ Small devices (landscape phones, 576px and up) */
 
     #product-footer{
         position:static;
-        bottom:0;
-        width:100%;
     }
 }
 
