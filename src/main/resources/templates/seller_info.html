@@ -13,14 +13,22 @@
 
 <style>
 
-    #buttonSearch, #btnLink {
+    #buttonSearch, .btnLink {
   background-color:#b042b4;
   border: 1px solid #b042b4;
 }
 
-#buttonSearch:hover, #btnLink:hover {
+#buttonSearch:hover, .btnLink:hover {
   background-color: #563d7c;
   border: 1px solid #563d7c;
+}
+
+.sellerLinkBottom {
+    color: #b042b4;
+}
+
+.sellerLinkBottom:hover {
+    color: #563d7c;
 }
 
 
@@ -132,7 +140,7 @@
                             <th scope="row"></th>
                             <td class="font-weight-bold">How do I begin selling on BevyBuy platform?</td>
                             <td>
-                                <a th:href="@{seller_reg}" target="_blank" class="font-weight-bold">Simply click on this link to Register as a Seller!</a>
+                                <a th:href="@{seller_reg}" target="_blank" class="font-weight-bold sellerLinkBottom">Simply click on this link to Register as a Seller!</a>
                             </td>
                         </tr> <br><br>
                         <th scope="row"></th>
