@@ -1,21 +1,21 @@
 //JavaScript to validate the seller form
 
 //**TO DELETE *//
-document.querySelector('#inputName').value = "Anthony";
-document.querySelector("#inputCompany").value = "Tan Ah Kow Pte Ltd"
-document.querySelector("#inputAddr").value = "Istana";
-document.querySelector("#inputAddrUnit").value = "the whole place";
-document.querySelector("#inputAddrPostal").value = "656565";
-document.querySelector("#inputEmail").value = "tanahKOW@TAK.com";
-document.querySelector("#inputMobileNum").value = "658888888";
-document.querySelector("#inputItemDescription").value = "iPhone 20";
-document.querySelector("#inputListPrice").value = "2000";
-document.querySelector("#inputGroupDiscount").value = "15";
-document.querySelector("#inputMinQty").value = "100";
-document.querySelector("#inputOfferPeriod").value = "3";
+//document.querySelector('#inputName').value = "Anthony";
+//document.querySelector("#inputCompany").value = "Tan Ah Kow Pte Ltd"
+//document.querySelector("#inputAddr").value = "Istana";
+//document.querySelector("#inputAddrUnit").value = "the whole place";
+//document.querySelector("#inputAddrPostal").value = "656565";
+//document.querySelector("#inputEmail").value = "tanahKOW@TAK.com";
+//document.querySelector("#inputMobileNum").value = "658888888";
+//document.querySelector("#inputItemDescription").value = "iPhone 20";
+//document.querySelector("#inputListPrice").value = "2000";
+//document.querySelector("#inputGroupDiscount").value = "15";
+//document.querySelector("#inputMinQty").value = "100";
+//document.querySelector("#inputOfferPeriod").value = "3";
 //document.querySelector("#inputReferralCode").value = "1806123";
-document.querySelector("#inputCommunityOrgz").value = "1920765";
-document.querySelector("#inputCompanyDescription").value = "Tan Ah Kow is a fake company";
+//document.querySelector("#inputCommunityOrgz").value = "1920765";
+//document.querySelector("#inputCompanyDescription").value = "Tan Ah Kow is a fake company";
 //**TO DELETE BLOCK ABOVE *//
 
 //##ADDED 27SEP##//
