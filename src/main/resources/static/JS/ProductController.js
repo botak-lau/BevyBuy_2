@@ -129,7 +129,8 @@ class ProductController {
 
     fetch("https://bevybuy.herokuapp.com/item/add", {
       method: "POST",
-      body: formData,
+      //body: 
+      Content-Type: multi-part/formData,
     })
       .then((response) => response.json())
       .then((data) => {
