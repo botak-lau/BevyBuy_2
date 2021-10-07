@@ -34,7 +34,11 @@ let storeImage3 = ""
     document.getElementById("inputEffectiveDate").setAttribute("min", todayDate);
     document.getElementById("inputEffectiveDate").setAttribute("max", nextMonthDate);
 
-formSeller.addEventListener('submit', (event) => {
+
+
+//formSeller.addEventListener('submit', (event) => {
+
+document.getElementById("formSeller").addEventListener('submit', (event) => {
     event.preventDefault();
 
     const inputName = document.querySelector('#inputName');
